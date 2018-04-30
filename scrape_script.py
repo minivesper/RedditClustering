@@ -1,7 +1,4 @@
 import praw
-
-
-
 import pylab as plt
 from scipy.stats import ttest_ind
 
@@ -11,8 +8,8 @@ reddit = praw.Reddit(client_id='tc_fFbWZrkDSRw',
                     username = 'lhimelman',
                     password = 'madisonave77')
 
-                    # assume you have a Reddit instance bound to variable `reddit`
-                    #top_level_comments = list(submission.comments)
+# assume you have a Reddit instance bound to variable `reddit`
+#top_level_comments = list(submission.comments)
 commentFreq = {}
 subredditList = ["funny","AskReddit","todayilearned","science","worldnews","pics"]
 for subredditname in subredditList:
