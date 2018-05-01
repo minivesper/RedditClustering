@@ -3,9 +3,7 @@ import pandas as pd
 
 reddit = praw.Reddit(client_id='tc_fFbWZrkDSRw',
                      client_secret='fTq7nFVzdkCHFZY7jWQvHmkLpwk',
-                     user_agent='lhimelman',
-                    username = 'lhimelman',
-                    password = 'madisonave77')
+                     user_agent='lhimelman')
 
 # assume you have a Reddit instance bound to variable `reddit`
 #top_level_comments = list(submission.comments)
