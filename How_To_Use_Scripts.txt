@@ -4,11 +4,11 @@ commentScraper.py:
   EX: python3 commentScraper.py *SaveFilename* *initialSubreddit* *numberofpoststolookat*
       python3 commentScraper.py data.txt funny 10
 
-userNameScraper.py:
-  *A Scraper that gets just usernames, does it very quickly. 6000 usernames can be collected in a few minutes*
+  userNameScraper.py:
+    *A Scraper that gets just usernames, does it very quickly. 6000 usernames can be collected in a few minutes*
 
-  EX: python3 userNameScraper.py *saveFilename* *ListofSubreddit* *numberofpoststolookat*
-      python3 userNameScraper.py data.txt funny,pics,todayilearned 100
+    EX: python3 userNameScraper.py *saveFilename* *ListofSubreddit* *numberofpoststolookat*
+        python3 userNameScraper.py data.txt funny,pics,todayilearned 100
 
 ScrapeFreqfromUser.py:
   *A scraper that gets frequencies of comments from a list of users*
