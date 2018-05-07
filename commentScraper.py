@@ -28,7 +28,7 @@ def scrapeSubreddit(reddit, subredditname, postNum):
 
 if __name__ == "__main__":
 
-    ##To use, add cmdline parameters of where csv should be saved, what initial sub to use, and how manyn posts on that sub to look at.
+    ##To use, add cmdline parameters of where csv should be saved, what initial sub to use, and how manyn posts on that sub to look at
     SaveFile = sys.argv[1]
     initSub = sys.argv[2]
     postNum = int(sys.argv[3])
