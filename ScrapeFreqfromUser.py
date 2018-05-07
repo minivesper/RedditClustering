@@ -8,17 +8,20 @@ def scrapeSubreddit(reddit, users):
     usernum = 1
     for user in users:
         userCFreq = {}
-        for comment in reddit.redditor(user).comments.new(limit=None):
-            sub = comment.subreddit
-            if sub not in userCFreq:
-                userCFreq[sub] = 1
-            else:
-                userCFreq[sub] += 1
-            if sub not in headers:
-                headers.append(sub)
-        commentFreq[user] = userCFreq
-        usernum = usernum + 1
-        print(usernum, "out of", len(users))
+        try:
+            for comment in reddit.redditor(user).comments.new(limit=None):
+                sub = comment.subreddit
+                if sub not in userCFreq:
+                    userCFreq[sub] = 1
+                else:
+                    userCFreq[sub] += 1
+                if sub not in headers:
+                    headers.append(sub)
+            commentFreq[user] = userCFreq
+            usernum = usernum + 1
+            print(usernum, "out of", len(users))
+        except:
+            print("something went wrong")
     return commentFreq,headers
 
 if __name__ == "__main__":
